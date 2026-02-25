@@ -17,6 +17,6 @@ jobs:
     - name: Deploy to Azure WebApp (Docker Hub image)
       uses: azure/webapps-deploy@v2
       with:
-        app-name: mlmodelwebapp   # exact Azure WebApp name
+        app-name: mlmodelwebapp  # exact Azure WebApp name
         publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE }}
         images: 'sanjanach04/mlops-api-repo-dh:latest'
